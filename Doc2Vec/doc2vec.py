@@ -9,7 +9,7 @@ import csv
 from collections import namedtuple
 
 
-train_data = pd.read_csv('./Data/Gungor_2018_VictorianAuthorAttribution_data-train.csv')
+train_data = pd.read_csv('../Data/Gungor_2018_VictorianAuthorAttribution_data-train.csv')
 labeled_tuple = namedtuple('tuple', 'words tags')
 train_texts = []
 for i, text in tqdm(enumerate(train_data.text.values)):

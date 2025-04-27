@@ -8,7 +8,7 @@ from collections import defaultdict
 import torch
 from train_neural import build_encoder, StyleEncoder, hyperparams
 
-def load_train_set(path='Data/masterembeddings.json', max_per_author=1000):
+def load_train_set(path='../Data/masterembeddings.json', max_per_author=1000):
     with open(path, 'r', encoding='utf-8') as f:
         first_char = f.read(1)
         f.seek(0)
