@@ -8,7 +8,7 @@ test_data = []
 def is_test(idx):
     return idx % 10 == 0
 
-with open("Gungor_2018_VictorianAuthorAttribution_data-train.csv", "r") as csvfile:
+with open("./Data/Gungor_2018_VictorianAuthorAttribution_data-train.csv", "r") as csvfile:
     reader = csv.reader(csvfile, delimiter = ',')
     next(reader)
     for i, row in enumerate(reader):

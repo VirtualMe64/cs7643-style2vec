@@ -54,6 +54,6 @@ def embed_victorian_csv(
 # Example usage
 if __name__ == "__main__":
     embed_victorian_csv(
-        "../Data/Gungor_2018_VictorianAuthorAttribution_data-train.csv",
+        "./Data/Gungor_2018_VictorianAuthorAttribution_data-train.csv",
         max_rows=None  # ✅ For quick testing; change to None on your PC
     )
