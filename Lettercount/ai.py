@@ -5,9 +5,9 @@ from collections import Counter
 train_data = []
 test_data = []
 
-TEST_PCT = 0.95
+TEST_PCT = 0.1
 def is_test(idx):
-    return (idx % 1000) < TEST_PCT * 1000
+    return (idx % 100) < TEST_PCT * 100
 
 with open("../Data/AI_Human.csv", "r", encoding="utf-8") as csvfile:
     reader = csv.reader(csvfile, delimiter = ',')
@@ -16,7 +16,7 @@ with open("../Data/AI_Human.csv", "r", encoding="utf-8") as csvfile:
             test_data.append(row)
         else:
             train_data.append(row)
-    
+
 class LetterFrequencyClassifier:
     def __init__(self):
         self.author_vecs = {}
